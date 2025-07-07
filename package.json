@@ -1,11 +1,16 @@
 {
   "name": "nestjs-logging-lib",
-  "version": "0.0.3",
-  "description": "A reusable logging library for NestJS.",
+  "version": "0.0.5",
+  "description": "A reusable logging library for NestJS applications with specialized logging methods for API requests, responses, database queries, and errors.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "nestjs",
