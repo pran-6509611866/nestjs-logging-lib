@@ -8,6 +8,17 @@ import {
   ErrorLog 
 } from './logging.constants';
 
+/**
+ * LoggingService
+ * 
+ * A reusable and configurable logging service for NestJS.
+ * Easily log info, errors, warnings, and debug data in your NestJS projects.
+ * 
+ * @example
+ * const logger = new LoggingService();
+ * logger.log('Hello world', 'AppController');
+ * logger.error('Something failed', 'stacktrace', 'MyService');
+ */
 @Injectable()
 export class LoggingService implements LoggerService {
   
